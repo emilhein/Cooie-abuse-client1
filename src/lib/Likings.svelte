@@ -20,14 +20,14 @@
   }
 </script>
 
-<button on:click={() => ilike('cats')}>
-  I like cats 
+<button on:click={() => ilike('specific_car1')}>
+  I like specific_car1 
 </button>
-<button on:click={() => ilike('horses')}>
-  I like horses 
+<button on:click={() => ilike('read_houses')}>
+  I like read_houses 
 </button>
-<button on:click={() => ilike('dogs')}>
-  I like dogs 
+<button on:click={() => ilike('Motorola phones')}>
+  I like Motorola phones 
 </button>
 <p>
 {likes}
