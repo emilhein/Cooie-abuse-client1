@@ -3,9 +3,10 @@
   const ilike = (topic) => {
     if(!likes.includes(topic)){
       likes = [...likes, topic]
-      try {
-        
-        fetch(`https://expresssimpler53bqn-fdzy--80.local-credentialless.webcontainer.io/cookie/${topic}`)
+      
+        fetch(`https://fake-ad-server.herokuapp.com/cookie/${topic}`,{
+            credentials: 'include' 
+         })
           .then(response => {
     // process data
     console.log('got it ', response)
@@ -13,9 +14,7 @@
   .catch(error => {
     console.error('Panic at the disco:', error);
   })
-        }catch (error){
-          console.log(error)
-        }
+     
 
     }
   }
