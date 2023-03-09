@@ -1,5 +1,4 @@
 <script>
-  let likes = []
   const ilike = (topic) => {
     fakeAdserver.insertAdIntoDiv(topic)
   }
@@ -16,5 +15,4 @@
   I like Motorola phones 
 </button>
 <p>
-{likes}
 </p>
