@@ -1,32 +1,18 @@
 <script>
   let likes = []
   const ilike = (topic) => {
-    if(!likes.includes(topic)){
-      likes = [...likes, topic]
-      
-        fetch(`https://fake-ad-server.herokuapp.com/cookie/${topic}`,{
-            credentials: 'include' 
-         })
-          .then(response => {
-    // process data
-    console.log('got it ', response)
-  })
-  .catch(error => {
-    console.error('Panic at the disco:', error);
-  })
-     
-
-    }
+    fakeAdserver.insertAdIntoDiv(topic)
   }
 </script>
 
-<button on:click={() => ilike('aston_martin')}>
+<button on:click={() => ilike('carslot')}>
+
   I like Aston Martin
 </button>
-<button on:click={() => ilike('red_houses')}>
+<button on:click={() => ilike('houseslot')}>
   I like red houses 
 </button>
-<button on:click={() => ilike('motorola_phones')}>
+<button on:click={() => ilike('phonesslot')}>
   I like Motorola phones 
 </button>
 <p>

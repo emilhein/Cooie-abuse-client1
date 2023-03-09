@@ -13,7 +13,9 @@
     </a>
   </div>
   <h1>Vite + Svelte</h1>
-
+<div id="carslot"></div>
+<div id="houseslot"></div>
+<div id="phonesslot"></div>
   <div class="card">
     <Likings />
   </div>
